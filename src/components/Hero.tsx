@@ -27,7 +27,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(interval);
   }, [heroImages.length]);
@@ -39,12 +39,12 @@ const Hero = () => {
         {heroImages.map((image, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+            className={`absolute inset-0 transition-transform duration-1000 ease-in-out ${
               index === currentImageIndex 
-                ? 'translate-x-0 opacity-100' 
+                ? 'translate-x-0' 
                 : index < currentImageIndex
-                ? '-translate-x-full opacity-0'
-                : 'translate-x-full opacity-0'
+                ? '-translate-x-full'
+                : 'translate-x-full'
             }`}
           >
             <img
