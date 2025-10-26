@@ -2,6 +2,11 @@ import { Mail, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { AvatarCircles } from "@/components/ui/avatar-circles";
+import avatar1 from "@/assets/avatars/avatar-1.png";
+import avatar2 from "@/assets/avatars/avatar-2.png";
+import avatar3 from "@/assets/avatars/avatar-3.png";
+import avatar4 from "@/assets/avatars/avatar-4.png";
+import avatar5 from "@/assets/avatars/avatar-5.png";
 import kuechenImg from "@/assets/hero/kuechen-vorher-nachher.png";
 import renovation1Img from "@/assets/hero/renovation-1.jpg";
 import renovation2Img from "@/assets/hero/renovation-2.jpg";
@@ -25,19 +30,19 @@ const Hero = () => {
 
   const avatars = [
     {
-      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+      imageUrl: avatar1,
     },
     {
-      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Max",
+      imageUrl: avatar2,
     },
     {
-      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Anna",
+      imageUrl: avatar3,
     },
     {
-      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie",
+      imageUrl: avatar4,
     },
     {
-      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Martin",
+      imageUrl: avatar5,
     },
   ];
 

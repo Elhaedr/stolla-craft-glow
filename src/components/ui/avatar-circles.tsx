@@ -28,7 +28,7 @@ export const AvatarCircles = ({
           className="relative inline-block"
         >
           <img
-            className="h-10 w-10 rounded-full border-2 border-white ring-2 ring-white/20 transition-transform hover:scale-110 hover:z-30"
+            className="h-10 w-10 rounded-full border border-white ring-1 ring-white/20 transition-transform hover:scale-110 hover:z-30 object-cover"
             src={avatar.imageUrl}
             width={40}
             height={40}
@@ -37,7 +37,7 @@ export const AvatarCircles = ({
         </a>
       ))}
       {numPeople && (
-        <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-black/80 text-center text-xs font-medium text-white ring-2 ring-white/20">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white bg-black/80 text-center text-xs font-medium text-white ring-1 ring-white/20">
           +{numPeople}
         </div>
       )}
