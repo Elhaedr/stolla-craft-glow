@@ -23,7 +23,7 @@ const services = [
     description:
       "Professionelle Betreuung Ihrer Liegenschaft – von der regelmässigen Reinigung bis zur Gartenpflege.",
     image: handwerkerImg,
-    href: "#kontakt",
+    href: "/leistungen/hauswartung",
   },
   {
     id: "installationen",
@@ -31,7 +31,7 @@ const services = [
     description:
       "Fachgerechte Montage und Installation von Sanitär, Elektro und weiteren Gebäudetechniken.",
     image: installationenImg,
-    href: "#kontakt",
+    href: "/leistungen/installationen",
   },
   {
     id: "renovationen",
@@ -39,7 +39,7 @@ const services = [
     description:
       "Komplette Sanierungen oder Teilrenovationen – wir setzen Ihre Wünsche präzise um.",
     image: fliesenlegerImg,
-    href: "#kontakt",
+    href: "/leistungen/renovationen",
   },
   {
     id: "service",
@@ -47,7 +47,7 @@ const services = [
     description:
       "Schnelle Reparaturen und Wartungsarbeiten – damit alles reibungslos funktioniert.",
     image: sanitaerImg,
-    href: "#kontakt",
+    href: "/leistungen/service",
   },
   {
     id: "innenausbau",
@@ -55,7 +55,7 @@ const services = [
     description:
       "Professioneller Innenausbau mit Trockenbau, Holzarbeiten und individueller Raumgestaltung.",
     image: innenausbauImg,
-    href: "#kontakt",
+    href: "/leistungen/innenausbau",
   },
   {
     id: "montagen",
@@ -63,7 +63,7 @@ const services = [
     description:
       "Fachgerechte Montage von Möbeln, Geräten und allen Einrichtungsgegenständen.",
     image: montagenImg,
-    href: "#kontakt",
+    href: "/leistungen/montagen",
   },
   {
     id: "malerarbeiten",
@@ -71,7 +71,7 @@ const services = [
     description:
       "Professionelle Malerarbeiten für Innen- und Außenbereiche – saubere Ausführung und präzise Farbgestaltung.",
     image: malerarbeitenImg,
-    href: "#kontakt",
+    href: "/leistungen/malerarbeiten",
   },
 ];
 
@@ -94,6 +94,33 @@ const Services = () => {
     carouselApi.on("select", updateSelection);
     return () => {
       carouselApi.off("select", updateSelection);
+    };
+  }, [carouselApi]);
+
+  // Auto-play functionality
+  useEffect(() => {
+    if (!carouselApi) {
+      return;
+    }
+
+    const autoPlay = setInterval(() => {
+      if (carouselApi.canScrollNext()) {
+        carouselApi.scrollNext();
+      } else {
+        carouselApi.scrollTo(0);
+      }
+    }, 4000); // 4 seconds
+
+    // Pause auto-play on user interaction
+    const handleInteraction = () => {
+      clearInterval(autoPlay);
+    };
+
+    carouselApi.on("pointerDown", handleInteraction);
+
+    return () => {
+      clearInterval(autoPlay);
+      carouselApi.off("pointerDown", handleInteraction);
     };
   }, [carouselApi]);
 
@@ -201,7 +228,7 @@ const Services = () => {
       {/* Küchen Section - Separate Card */}
       <div className="container mx-auto mt-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <a href="#kontakt" className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+          <a href="/leistungen/kuechen" className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
             <article className="grid md:grid-cols-2 gap-0 bg-card" itemScope itemType="https://schema.org/Service">
               <div className="relative h-64 md:h-auto overflow-hidden">
                 <img
