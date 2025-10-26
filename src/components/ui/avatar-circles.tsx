@@ -25,7 +25,7 @@ export const AvatarCircles = ({
           href={avatar.profileUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="relative inline-block"
+          className="relative inline-block z-10"
         >
           <img
             className="h-10 w-10 rounded-full border border-white ring-1 ring-white/20 transition-transform hover:scale-110 hover:z-30 object-cover"
@@ -37,7 +37,7 @@ export const AvatarCircles = ({
         </a>
       ))}
       {numPeople && (
-        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white bg-black/80 text-center text-xs font-medium text-white ring-1 ring-white/20">
+        <div className="relative z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white bg-black/80 text-center text-xs font-medium text-white ring-1 ring-white/20">
           +{numPeople}
         </div>
       )}
