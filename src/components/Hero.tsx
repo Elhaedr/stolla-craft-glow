@@ -1,16 +1,36 @@
 import { Mail, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Lottie from "lottie-react";
 import { useState, useEffect } from "react";
+import kuechenImg from "@/assets/hero/kuechen-vorher-nachher.png";
+import renovation1Img from "@/assets/hero/renovation-1.jpg";
+import renovation2Img from "@/assets/hero/renovation-2.jpg";
+import renovation3Img from "@/assets/hero/renovation-3.jpg";
+import bauarbeitenImg from "@/assets/hero/bauarbeiten.jpg";
+import sanitaerImg from "@/assets/hero/sanitaer.jpg";
+import elektroImg from "@/assets/hero/elektro.jpg";
+import malerImg from "@/assets/hero/maler.jpg";
 
 const Hero = () => {
-  const [animationData, setAnimationData] = useState(null);
+  const heroImages = [
+    kuechenImg,
+    renovation1Img,
+    renovation2Img,
+    renovation3Img,
+    bauarbeitenImg,
+    sanitaerImg,
+    elektroImg,
+    malerImg
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
-    fetch("/hero-animation.json")
-      .then((res) => res.json())
-      .then((data) => setAnimationData(data));
-  }, []);
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
 
   return (
     <section className="relative min-h-[calc(100vh+100px)] flex items-center justify-center overflow-hidden bg-white pt-28 md:pt-32 lg:pt-20 pb-32 md:pb-40">
@@ -84,21 +104,36 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Lottie Animation - appears after buttons on mobile, on right side on desktop */}
+            {/* Image Slideshow - appears after buttons on mobile, on right side on desktop */}
             <div className="flex justify-center lg:justify-end w-full">
               <div className="hero-animate w-full max-w-[480px] sm:max-w-[600px] md:max-w-[720px] lg:max-w-[600px] relative">
-                {/* Feste Kreise hinter Lottie Animation */}
-                <div className="absolute top-1/4 right-0 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-primary rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
-                <div className="absolute bottom-1/4 right-1/4 w-56 h-56 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] bg-accent rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
-                
-                {animationData && (
-                  <Lottie 
-                    animationData={animationData} 
-                    loop={true}
-                    autoplay={true}
-                    className="w-full h-auto scale-125 relative z-20 pointer-events-none"
-                  />
-                )}
+                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
+                  {heroImages.map((image, index) => (
+                    <img
+                      key={index}
+                      src={image}
+                      alt={`Renovation project ${index + 1}`}
+                      className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                        index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                      }`}
+                    />
+                  ))}
+                  {/* Indicator dots */}
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                    {heroImages.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          index === currentImageIndex 
+                            ? 'bg-white w-8' 
+                            : 'bg-white/50 hover:bg-white/75'
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
 
