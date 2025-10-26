@@ -85,10 +85,18 @@ const Contact = () => {
         "service_hvum5qn",
         "template_h1iy3iq",
         {
-          from_name: result.data.name,
-          from_email: result.data.email,
+          name: result.data.name,
+          email: result.data.email,
           phone: result.data.phone || "Nicht angegeben",
           message: result.data.message,
+          time: new Date().toLocaleString("de-CH", {
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+          }),
+          page_url: window.location.href,
         },
         "93scwsw4sq-kK0hJd"
       );
