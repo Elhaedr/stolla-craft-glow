@@ -85,7 +85,7 @@ const Hero = () => {
 
               {/* Main Headline */}
               <h1 className="hero-animate-delay-1 text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
-                <span className="text-primary">Nähe</span>, <span className="text-accent">Zuverlässigkeit</span>, 1A-Arbeit.
+                <span className="text-yellow-400">Nähe</span>, <span className="text-yellow-400">Zuverlässigkeit</span>, 1A-Arbeit.
               </h1>
 
               {/* Subline */}
@@ -96,10 +96,10 @@ const Hero = () => {
 
               {/* CTA Buttons */}
               <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-12 lg:mb-16">
-                <Button variant="default" size="lg" className="bg-primary text-white hover:bg-accent hover:text-dark transition-colors shadow-xl" asChild>
+                <Button variant="default" size="lg" className="bg-yellow-400 text-dark hover:bg-yellow-500 transition-colors shadow-xl" asChild>
                   <a href="#kalender">Angebot anfordern</a>
                 </Button>
-                <Button variant="secondary" size="lg" className="bg-accent text-dark border-accent hover:bg-accent/80 shadow-xl" asChild>
+                <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-dark transition-colors shadow-xl" asChild>
                   <a href="#kalender">Besichtigung buchen</a>
                 </Button>
               </div>
@@ -108,7 +108,7 @@ const Hero = () => {
               <div className="hero-animate-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/90 backdrop-blur-sm bg-black/20 rounded-full px-6 py-4">
                 <a
                   href="mailto:info@1a-stolla.ch"
-                  className="flex items-center gap-2 hover:text-accent transition-colors group"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
                 >
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">info@1a-stolla.ch</span>
@@ -116,7 +116,7 @@ const Hero = () => {
                 <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
                 <a
                   href="tel:+41796509117"
-                  className="flex items-center gap-2 hover:text-accent transition-colors group"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">+41 79 650 91 17</span>
@@ -126,7 +126,7 @@ const Hero = () => {
                   href="https://www.1a-stolla.ch"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-accent transition-colors group"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
                 >
                   <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">www.1a-stolla.ch</span>
