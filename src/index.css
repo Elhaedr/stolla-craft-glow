@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* 1a-Stolla Brand Colors - HSL only - DARK THEME */
+    --primary: 211 92% 43%;        /* #0A62D0 - Primary Blue */
+    --primary-foreground: 0 0% 100%;
+    
+    --accent: 48 88% 63%;          /* #F3D849 - Accent Yellow */
+    --accent-foreground: 0 0% 10%;
+    
+    --dark: 300 5% 10%;            /* #191718 - Dark */
+    --light: 210 17% 91%;          /* #E0E5E9 - Light */
+    
+    /* Light theme: heller Hintergrund, dunkle Schrift */
+    --background: 0 0% 100%;       /* Weiß */
+    --foreground: 0 0% 10%;        /* Dunkle Schrift */
+    
+    --card: 0 0% 98%;              /* Helle Cards */
+    --card-foreground: 0 0% 10%;
+    
+    --muted: 210 17% 95%;          /* Helles Muted */
+    --muted-foreground: 210 17% 40%;
+    
+    --border: 210 17% 85%;
+    --input: 210 17% 95%;
+    --ring: 211 92% 43%;           /* Primary */
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --radius: 1rem;                /* 16px as specified */
+    
+    /* Custom tokens */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.7);
+    --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Scroll reveal animation */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    transition: var(--transition-smooth);
+    border: 1px solid hsl(var(--foreground) / 0.1);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: hsl(var(--accent));
+  }
+  
+  /* Hero background animation */
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
+  }
+  
+  .hero-bg-animated {
+    animation: float 20s ease-in-out infinite;
+  }
+  
+  /* Pulse animation for CTAs */
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 0 0 hsl(var(--primary) / 0.4); }
+    50% { box-shadow: 0 0 0 20px hsl(var(--primary) / 0); }
+  }
+  
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+  
+  /* Counter animation (applied via JS) */
+  @keyframes count-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .counter-animate {
+    animation: count-up 0.6s ease-out;
+  }
+
+  /* Hero fade-in animations with proper initial state */
+  @keyframes hero-fade-in {
+    from { 
+      opacity: 0; 
+      transform: translateY(20px);
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-animate {
+    opacity: 0;
+    animation: hero-fade-in 0.7s ease-out forwards;
+  }
+  
+  .hero-animate-delay-1 {
+    opacity: 0;
+    animation: hero-fade-in 0.7s ease-out 0.2s forwards;
+  }
+  
+  .hero-animate-delay-2 {
+    opacity: 0;
+    animation: hero-fade-in 0.7s ease-out 0.3s forwards;
+  }
+  
+  .hero-animate-delay-3 {
+    opacity: 0;
+    animation: hero-fade-in 0.7s ease-out 0.5s forwards;
+  }
+  
+  .hero-animate-delay-4 {
+    opacity: 0;
+    animation: hero-fade-in 0.7s ease-out 0.7s forwards;
+  }
+}
