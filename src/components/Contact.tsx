@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import { z } from "zod";
 import emailjs from "@emailjs/browser";
+
+// Initialize EmailJS with your public key
+emailjs.init("p5tnCaAljQbmFHNqH");
 
 // Validation schema
 const contactSchema = z.object({
@@ -97,8 +100,7 @@ const Contact = () => {
             minute: "2-digit",
           }),
           page_url: window.location.href,
-        },
-        "p5tnCaAljQbmFHNqH"
+        }
       );
 
       toast({
