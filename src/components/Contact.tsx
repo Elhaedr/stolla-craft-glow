@@ -82,8 +82,8 @@ const Contact = () => {
     try {
       // Send email via EmailJS
       await emailjs.send(
-        "service_hvum5qn",
-        "template_h1iy3iq",
+        "service_3lr0wz4",
+        "p5tnCaAljQbmFHNqH",
         {
           name: result.data.name,
           email: result.data.email,
@@ -98,7 +98,7 @@ const Contact = () => {
           }),
           page_url: window.location.href,
         },
-        "93scwsw4sq-kK0hJd"
+        "p5tnCaAljQbmFHNqH"
       );
 
       toast({
