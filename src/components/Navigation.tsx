@@ -37,7 +37,7 @@ const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group">
             <img 
               src={logo} 
-              alt="1A-Stolla Logo"
+              alt="1A Stolla Logo"
               width="68"
               height="48"
               fetchPriority="high"
@@ -45,7 +45,7 @@ const Navigation = () => {
               className="h-12 w-auto transition-transform group-hover:scale-105"
             />
             <div className="text-2xl font-bold text-primary transition-colors group-hover:text-accent">
-              1A-Stolla
+              1A Stolla
             </div>
           </a>
 
