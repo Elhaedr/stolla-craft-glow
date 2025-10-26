@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* 1a-Stolla Brand Colors - HSL only - DARK THEME */
-    --primary: 211 92% 43%;        /* #0A62D0 - Primary Blue */
+    --primary: 0 0% 10%;           /* Schwarz - Primary Black */
     --primary-foreground: 0 0% 100%;
     
     --accent: 48 88% 63%;          /* #F3D849 - Accent Yellow */
@@ -30,7 +30,7 @@ All colors MUST be HSL.
     
     --border: 210 17% 85%;
     --input: 210 17% 95%;
-    --ring: 211 92% 43%;           /* Primary */
+    --ring: 0 0% 10%;              /* Primary */
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
