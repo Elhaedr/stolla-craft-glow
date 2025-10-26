@@ -7,6 +7,7 @@ import installationenImg from "@/assets/installationen.jpg";
 import innenausbauImg from "@/assets/innenausbau.jpg";
 import montagenImg from "@/assets/montagen.jpg";
 import plattenarbeitenImg from "@/assets/plattenarbeiten.jpg";
+import malerarbeitenImg from "@/assets/malerarbeiten.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -70,6 +71,14 @@ const services = [
     description:
       "Professionelle Verlegung von Platten und Fliesen für Bad, Küche und Wohnräume.",
     image: plattenarbeitenImg,
+    href: "#kontakt",
+  },
+  {
+    id: "malerarbeiten",
+    title: "Malerarbeiten",
+    description:
+      "Professionelle Malerarbeiten für Innen- und Außenbereiche – saubere Ausführung und präzise Farbgestaltung.",
+    image: malerarbeitenImg,
     href: "#kontakt",
   },
 ];
