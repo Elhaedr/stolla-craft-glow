@@ -83,7 +83,7 @@ const Contact = () => {
       // Send email via EmailJS
       await emailjs.send(
         "service_3lr0wz4",
-        "p5tnCaAljQbmFHNqH",
+        "template_vc17il9",
         {
           name: result.data.name,
           email: result.data.email,
