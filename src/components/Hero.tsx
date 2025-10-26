@@ -1,6 +1,7 @@
 import { Mail, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { AvatarCircles } from "@/components/ui/avatar-circles";
 import kuechenImg from "@/assets/hero/kuechen-vorher-nachher.png";
 import renovation1Img from "@/assets/hero/renovation-1.jpg";
 import renovation2Img from "@/assets/hero/renovation-2.jpg";
@@ -20,6 +21,24 @@ const Hero = () => {
     sanitaerImg,
     elektroImg,
     malerImg
+  ];
+
+  const avatars = [
+    {
+      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Felix",
+    },
+    {
+      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Max",
+    },
+    {
+      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Anna",
+    },
+    {
+      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie",
+    },
+    {
+      imageUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Martin",
+    },
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -91,6 +110,14 @@ const Hero = () => {
               <h1 className="hero-animate-delay-1 text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
                 <span className="text-white">Nähe</span>, <span className="text-yellow-400">Zuverlässigkeit</span>, 1A-Arbeit.
               </h1>
+
+              {/* Avatar Circles */}
+              <div className="hero-animate-delay-1 flex justify-center items-center gap-3 mb-4">
+                <AvatarCircles numPeople={150} avatarUrls={avatars} />
+                <span className="text-white/90 text-sm font-medium">
+                  Über 150 zufriedene Kunden
+                </span>
+              </div>
 
               {/* Subline */}
               <p className="hero-animate-delay-2 text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
