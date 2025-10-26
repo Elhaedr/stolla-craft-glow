@@ -85,7 +85,7 @@ const Hero = () => {
 
               {/* Main Headline */}
               <h1 className="hero-animate-delay-1 text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
-                <span className="text-yellow-400">Nähe</span>, <span className="text-yellow-400">Zuverlässigkeit</span>, 1A-Arbeit.
+                <span className="text-white">Nähe</span>, <span className="text-yellow-400">Zuverlässigkeit</span>, 1A-Arbeit.
               </h1>
 
               {/* Subline */}
