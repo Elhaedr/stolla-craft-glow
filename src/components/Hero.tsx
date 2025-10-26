@@ -88,8 +88,8 @@ const Hero = () => {
             <div className="flex justify-center lg:justify-end w-full">
               <div className="hero-animate w-full max-w-[480px] sm:max-w-[600px] md:max-w-[720px] lg:max-w-[600px] relative">
                 {/* Feste Kreise hinter Lottie Animation */}
-                <div className="absolute top-1/4 right-0 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-accent rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
-                <div className="absolute bottom-1/4 right-1/4 w-56 h-56 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] bg-primary rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
+                <div className="absolute top-1/4 right-0 w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 bg-primary rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
+                <div className="absolute bottom-1/4 right-1/4 w-56 h-56 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] bg-accent rounded-full opacity-75 transition-transform duration-500 hover:scale-110 z-0 cursor-pointer" />
                 
                 {animationData && (
                   <Lottie 
