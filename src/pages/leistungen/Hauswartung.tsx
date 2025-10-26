@@ -8,7 +8,7 @@ const Hauswartung = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-28 pb-20">
+      <main className="pb-20">
         {/* Hero Section */}
         <section className="relative h-[400px] overflow-hidden">
           <img
@@ -16,7 +16,7 @@ const Hauswartung = () => {
             alt="Hauswartung - Professionelle Liegenschaftsbetreuung"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/70" />
+          <div className="absolute inset-0 bg-black/60" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="container mx-auto px-4 text-center">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
