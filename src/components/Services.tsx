@@ -6,8 +6,8 @@ import handwerkerImg from "@/assets/handwerker.jpg";
 import installationenImg from "@/assets/installationen.jpg";
 import innenausbauImg from "@/assets/innenausbau.jpg";
 import montagenImg from "@/assets/montagen.jpg";
-import plattenarbeitenImg from "@/assets/plattenarbeiten.jpg";
 import malerarbeitenImg from "@/assets/malerarbeiten.jpg";
+import kuechenImg from "@/assets/kuechen.jpg";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -63,14 +63,6 @@ const services = [
     description:
       "Fachgerechte Montage von Möbeln, Geräten und allen Einrichtungsgegenständen.",
     image: montagenImg,
-    href: "#kontakt",
-  },
-  {
-    id: "plattenarbeiten",
-    title: "Plattenarbeiten",
-    description:
-      "Professionelle Verlegung von Platten und Fliesen für Bad, Küche und Wohnräume.",
-    image: plattenarbeitenImg,
     href: "#kontakt",
   },
   {
@@ -203,6 +195,36 @@ const Services = () => {
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
+        </div>
+      </div>
+
+      {/* Küchen Section - Separate Card */}
+      <div className="container mx-auto mt-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <a href="#kontakt" className="group block rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+            <article className="grid md:grid-cols-2 gap-0 bg-card" itemScope itemType="https://schema.org/Service">
+              <div className="relative h-64 md:h-auto overflow-hidden">
+                <img
+                  src={kuechenImg}
+                  alt="Küchen - Hochwertige Einbauküchen und Küchenplanung im Kanton Bern"
+                  className="absolute h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div className="p-8 md:p-10 flex flex-col justify-center">
+                <h3 className="text-3xl font-bold text-primary mb-4">Küchen</h3>
+                <p className="text-lg text-muted-foreground mb-6" itemProp="description">
+                  Hochwertige Einbauküchen nach Maß – von der Planung über die Lieferung bis zur professionellen Montage. 
+                  Wir realisieren Ihre Traumküche mit modernsten Materialien und durchdachtem Design.
+                </p>
+                <div className="flex items-center text-primary font-medium">
+                  Mehr erfahren
+                  <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </section>
