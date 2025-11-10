@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "@/hooks/use-toast";
 import { z } from "zod";
-import emailjs from "@emailjs/browser";
-
-// Initialize EmailJS with your public key
-emailjs.init("p5tnCaAljQbmFHNqH");
+import { supabase } from "@/integrations/supabase/client";
 
 // Validation schema
 const contactSchema = z.object({
@@ -83,25 +80,16 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Send email via EmailJS
-      await emailjs.send(
-        "service_3lr0wz4",
-        "template_vc17il9",
-        {
+      const { error } = await supabase.functions.invoke("send-contact-email", {
+        body: {
           name: result.data.name,
           email: result.data.email,
           phone: result.data.phone || "Nicht angegeben",
           message: result.data.message,
-          time: new Date().toLocaleString("de-CH", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-          }),
-          page_url: window.location.href,
-        }
-      );
+        },
+      });
+
+      if (error) throw error;
 
       toast({
         title: "Anfrage gesendet!",
@@ -116,7 +104,7 @@ const Contact = () => {
         description: "Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
         variant: "destructive",
       });
-      console.error("EmailJS error:", error);
+      console.error("Error sending email:", error);
     } finally {
       setIsSubmitting(false);
     }
