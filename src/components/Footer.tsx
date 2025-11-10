@@ -11,14 +11,14 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
             <img 
               src={logo} 
-              alt="1a-Stolla Logo"
+              alt="1A Stolla Logo"
               width="57"
               height="40"
               loading="lazy"
               decoding="async"
               className="h-10 w-auto"
             />
-              <h3 className="text-2xl font-bold">1a-Stolla</h3>
+              <h3 className="text-2xl font-bold">1A Stolla</h3>
             </div>
             <p className="text-background/70 mb-4">
               Handwerk, das hält – seit über 15 Jahren Ihr zuverlässiger Partner
@@ -111,7 +111,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t-2 border-accent">
           <p className="text-center text-background/70 text-sm">
-            © {new Date().getFullYear()} 1a-Stolla – Mehmet Stella. Alle Rechte
+            © {new Date().getFullYear()} 1A Stolla – Mehmet Stella. Alle Rechte
             vorbehalten.
           </p>
         </div>
