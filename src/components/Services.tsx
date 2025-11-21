@@ -24,14 +24,6 @@ const services = [
     href: "/leistungen/elektro",
   },
   {
-    id: "lichtinstallationen",
-    title: "Lichtinstallationen",
-    description:
-      "Neue Endstromkreise erstellen, Installation von Gerätezuleitungen, Herd, Backofen, Boiler, Waschmaschine etc. fix anschliessen",
-    image: malerarbeitenImg,
-    href: "/leistungen/elektro",
-  },
-  {
     id: "verteilungen",
     title: "Verteilungen & Sicherungskasten",
     description:
