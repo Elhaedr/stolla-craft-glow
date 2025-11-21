@@ -2,8 +2,8 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import elektroinstallationenImg from "@/assets/elektroinstallationen.jpg";
 import sicherungskastenImg from "@/assets/sicherungskasten.webp";
+import beleuchtungImg from "@/assets/beleuchtung.webp";
 import sanitaerImg from "@/assets/sanitaer.jpg";
-import innenausbauImg from "@/assets/innenausbau.jpg";
 import montagenImg from "@/assets/montagen.jpg";
 import { Button } from "@/components/ui/button";
 import {
@@ -35,7 +35,7 @@ const services = [
     title: "Beleuchtung",
     description:
       "Innen- & Aussenbeleuchtung, LED-Umrüstung, Lampenmontage",
-    image: innenausbauImg,
+    image: beleuchtungImg,
     href: "/leistungen/elektro",
   },
   {
