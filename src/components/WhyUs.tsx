@@ -5,22 +5,26 @@ const WhyUs = () => {
     {
       icon: Shield,
       title: "Ehrlich, sauber & zuverlässig",
-      description: "Sie erhalten ehrliche, saubere und zuverlässige Arbeit zu fairen Preisen."
+      description: "Sie erhalten ehrliche, saubere und zuverlässige Arbeit zu fairen Preisen.",
+      color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Heart,
       title: "Persönlich & flexibel",
-      description: "Ich arbeite persönlich, flexibel und mit großer Sorgfalt – egal ob kleine Reparatur oder größere Installation."
+      description: "Ich arbeite persönlich, flexibel und mit großer Sorgfalt – egal ob kleine Reparatur oder größere Installation.",
+      color: "from-rose-500 to-pink-500"
     },
     {
       icon: Network,
       title: "Erfahrung & Netzwerk",
-      description: "Durch meine Erfahrung und mein Netzwerk mit Partnerfirmen kann ich Aufträge effizient und ohne unnötige Umwege ausführen."
+      description: "Durch meine Erfahrung und mein Netzwerk mit Partnerfirmen kann ich Aufträge effizient und ohne unnötige Umwege ausführen.",
+      color: "from-violet-500 to-purple-500"
     },
     {
       icon: Award,
       title: "Kundenzufriedenheit first",
-      description: "Kundenzufriedenheit und sauberes Handwerk stehen bei mir an erster Stelle."
+      description: "Kundenzufriedenheit und sauberes Handwerk stehen bei mir an erster Stelle.",
+      color: "from-amber-500 to-orange-500"
     }
   ];
 
@@ -45,19 +49,25 @@ const WhyUs = () => {
               return (
                 <div
                   key={index}
-                  className="group bg-card border border-border rounded-xl p-6 lg:p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                  className="group relative bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden min-h-[240px] flex flex-col"
                 >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                        <Icon className="w-6 h-6 text-primary" />
+                  {/* Gradient Background on Hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <div className="relative z-10 flex flex-col items-center text-center flex-1">
+                    {/* Icon */}
+                    <div className="mb-6">
+                      <div className={`w-20 h-20 bg-gradient-to-br ${advantage.color} rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                        <Icon className="w-10 h-10 text-white" strokeWidth={2.5} />
                       </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">
+                    
+                    {/* Content */}
+                    <div className="flex-1 flex flex-col">
+                      <h3 className="text-xl lg:text-2xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                         {advantage.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-muted-foreground leading-relaxed text-base">
                         {advantage.description}
                       </p>
                     </div>
