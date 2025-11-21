@@ -1,6 +1,6 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import installationenImg from "@/assets/installationen.jpg";
+import elektroinstallationenImg from "@/assets/elektroinstallationen.jpg";
 import sanitaerImg from "@/assets/sanitaer.jpg";
 import handwerkerImg from "@/assets/handwerker.jpg";
 import innenausbauImg from "@/assets/innenausbau.jpg";
@@ -20,7 +20,7 @@ const services = [
     title: "Elektroinstallationen",
     description:
       "Steckdosen & Schalter installieren / erneuern, Leitungen ziehen (AP/UP), Erweiterungen von Stromkreisen",
-    image: installationenImg,
+    image: elektroinstallationenImg,
     href: "/leistungen/elektro",
   },
   {
