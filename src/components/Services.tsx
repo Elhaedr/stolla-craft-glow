@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import elektroinstallationenImg from "@/assets/elektroinstallationen.jpg";
 import sicherungskastenImg from "@/assets/sicherungskasten.webp";
 import beleuchtungImg from "@/assets/beleuchtung.webp";
-import sanitaerImg from "@/assets/sanitaer.jpg";
+import serviceImg from "@/assets/service-reparaturen.png";
 import montagenImg from "@/assets/montagen.jpg";
 import { Button } from "@/components/ui/button";
 import {
@@ -51,7 +51,7 @@ const services = [
     title: "Service & Reparaturen",
     description:
       "Störungen beheben, Fehlerstrom & Kurzschlüsse, Geräteanschluss, Modernisierungen",
-    image: sanitaerImg,
+    image: serviceImg,
     href: "/leistungen/elektro",
   },
 ];
