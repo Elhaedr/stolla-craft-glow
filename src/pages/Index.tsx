@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
 import Services from "@/components/Services";
 import Trust from "@/components/Trust";
+import SiNa from "@/components/SiNa";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
@@ -20,6 +21,7 @@ const Index = () => {
         <WhyUs />
         <Services />
         <Trust />
+        <SiNa />
         <Testimonials />
         <Suspense fallback={<div className="min-h-screen" />}>
           <CalendarBooking />
