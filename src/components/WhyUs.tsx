@@ -1,6 +1,32 @@
 import { Shield, Heart, Network, Award } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 
 const WhyUs = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   const advantages = [
     {
       icon: Shield,
@@ -31,9 +57,11 @@ const WhyUs = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto" ref={sectionRef}>
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16">
+          <div className={`text-center mb-12 md:mb-16 transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               Warum <span className="text-primary">1A Stolla</span>?
             </h2>
@@ -49,7 +77,12 @@ const WhyUs = () => {
               return (
                 <div
                   key={index}
-                  className="group relative bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden min-h-[240px] flex flex-col"
+                  className={`group relative bg-card border border-border rounded-2xl p-8 hover:shadow-2xl transition-all duration-700 hover:-translate-y-2 overflow-hidden min-h-[240px] flex flex-col ${
+                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                  }`}
+                  style={{
+                    transitionDelay: isVisible ? `${index * 150}ms` : '0ms'
+                  }}
                 >
                   {/* Gradient Background on Hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
