@@ -1,10 +1,9 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import elektroinstallationenImg from "@/assets/elektroinstallationen.jpg";
+import sicherungskastenImg from "@/assets/sicherungskasten.webp";
 import sanitaerImg from "@/assets/sanitaer.jpg";
-import handwerkerImg from "@/assets/handwerker.jpg";
 import innenausbauImg from "@/assets/innenausbau.jpg";
-import malerarbeitenImg from "@/assets/malerarbeiten.jpg";
 import montagenImg from "@/assets/montagen.jpg";
 import { Button } from "@/components/ui/button";
 import {
@@ -28,7 +27,7 @@ const services = [
     title: "Verteilungen & Sicherungskasten",
     description:
       "Sicherungen ersetzen, FI/RCD nachrüsten, Verteiler umbauen, Beschriftung erneuern, Messungen und Fehlersuche",
-    image: handwerkerImg,
+    image: sicherungskastenImg,
     href: "/leistungen/elektro",
   },
   {
