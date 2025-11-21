@@ -65,41 +65,82 @@ const Services = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-            {services.map((service) => (
-              <a 
-                key={service.id} 
-                href={service.href} 
-                className="group block"
-              >
-                <article
-                  className="relative h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
-                  itemScope
-                  itemType="https://schema.org/Service"
+          <div className="flex flex-col gap-6 lg:gap-8">
+            {/* First Row - 3 cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {services.slice(0, 3).map((service) => (
+                <a 
+                  key={service.id} 
+                  href={service.href} 
+                  className="group block"
                 >
-                  <img
-                    src={service.image}
-                    alt={`${service.title} - Professionelle Elektroarbeiten im Kanton Bern`}
-                    className="absolute h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                  <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
-                  <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" itemProp="name">
-                      {service.title}
-                    </h3>
-                    <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
-                      {service.description}
-                    </p>
-                    <div className="flex items-center text-sm font-medium text-primary group-hover:translate-x-2 transition-transform duration-300">
-                      Mehr erfahren
-                      <ArrowRight className="ml-2 w-5 h-5" />
+                  <article
+                    className="relative h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
+                    itemScope
+                    itemType="https://schema.org/Service"
+                  >
+                    <img
+                      src={service.image}
+                      alt={`${service.title} - Professionelle Elektroarbeiten im Kanton Bern`}
+                      className="absolute h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
+                      <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" itemProp="name">
+                        {service.title}
+                      </h3>
+                      <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
+                        {service.description}
+                      </p>
+                      <div className="flex items-center text-sm font-medium text-primary group-hover:translate-x-2 transition-transform duration-300">
+                        Mehr erfahren
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </div>
                     </div>
-                  </div>
-                </article>
-              </a>
-            ))}
+                  </article>
+                </a>
+              ))}
+            </div>
+
+            {/* Second Row - 2 cards centered */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 lg:max-w-[66%] lg:mx-auto">
+              {services.slice(3, 5).map((service) => (
+                <a 
+                  key={service.id} 
+                  href={service.href} 
+                  className="group block"
+                >
+                  <article
+                    className="relative h-full min-h-[400px] overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500"
+                    itemScope
+                    itemType="https://schema.org/Service"
+                  >
+                    <img
+                      src={service.image}
+                      alt={`${service.title} - Professionelle Elektroarbeiten im Kanton Bern`}
+                      className="absolute h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
+                      <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" itemProp="name">
+                        {service.title}
+                      </h3>
+                      <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
+                        {service.description}
+                      </p>
+                      <div className="flex items-center text-sm font-medium text-primary group-hover:translate-x-2 transition-transform duration-300">
+                        Mehr erfahren
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </div>
+                    </div>
+                  </article>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
