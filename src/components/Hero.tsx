@@ -112,8 +112,8 @@ const Hero = () => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="hero-animate-delay-1 text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
-                <span className="text-white">Nähe</span>, <span className="text-yellow-400">Zuverlässigkeit</span>, 1A-Arbeit.
+              <h1 className="hero-animate-delay-1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                1A Stolla – <span className="text-yellow-400">Elektroinstallationen</span> & Service unter Fachverantwortung
               </h1>
 
               {/* Avatar Circles */}
@@ -125,23 +125,31 @@ const Hero = () => {
               </div>
 
               {/* Subline */}
-              <p className="hero-animate-delay-2 text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-md">
-                Hauswartung, Installationen, Renovationen – zuverlässig, termintreu,
-                sauber
+              <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
+                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
               </p>
 
               {/* CTA Buttons */}
-              <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-12 lg:mb-16">
+              <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button variant="default" size="lg" className="bg-yellow-400 text-dark hover:bg-yellow-500 transition-colors shadow-xl" asChild>
-                  <a href="#kalender">Angebot anfordern</a>
+                  <a href="#kalender">Offerte anfragen</a>
                 </Button>
                 <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-dark transition-colors shadow-xl" asChild>
-                  <a href="#kalender">Besichtigung buchen</a>
+                  <a href="tel:+41796509117">Anrufen: +41 79 650 91 17</a>
                 </Button>
               </div>
 
+              {/* Introduction Text */}
+              <div className="hero-animate-delay-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-5 max-w-3xl mx-auto mb-12 lg:mb-16 border border-white/20">
+                <p className="text-white/95 text-base leading-relaxed">
+                  Ich führe Elektroarbeiten sauber, zuverlässig und zu fairen Preisen aus. 
+                  Die Fachverantwortung und der offizielle Sicherheitsnachweis (SiNa) laufen über meinen konzessionierten Partnerbetrieb KFK Frutigen. 
+                  So erhalten Sie eine normgerechte Installation mit rechtsgültiger Dokumentation.
+                </p>
+              </div>
+
               {/* Contact Info */}
-              <div className="hero-animate-delay-4 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/90 backdrop-blur-sm bg-black/20 rounded-full px-6 py-4">
+              <div className="hero-animate-delay-5 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/90 backdrop-blur-sm bg-black/20 rounded-full px-6 py-4">
                 <a
                   href="mailto:info@1a-stolla.ch"
                   className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
