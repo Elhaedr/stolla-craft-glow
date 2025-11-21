@@ -104,8 +104,8 @@ const Services = () => {
               ))}
             </div>
 
-            {/* Second Row - 2 cards centered */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 lg:max-w-[66%] lg:mx-auto">
+            {/* Second Row - 2 cards centered, taking up 2/3 of total width */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-full lg:w-2/3 lg:mx-auto">
               {services.slice(3, 5).map((service) => (
                 <a 
                   key={service.id} 
