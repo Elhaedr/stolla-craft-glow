@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import WhyUs from "@/components/WhyUs";
 import Services from "@/components/Services";
 import Trust from "@/components/Trust";
 import Testimonials from "@/components/Testimonials";
@@ -16,6 +17,7 @@ const Index = () => {
       <Navigation />
       <main itemScope itemType="https://schema.org/WebPage">
         <Hero />
+        <WhyUs />
         <Services />
         <Trust />
         <Testimonials />
