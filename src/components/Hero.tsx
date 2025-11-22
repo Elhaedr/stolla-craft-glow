@@ -131,16 +131,9 @@ const Hero = () => {
               </div>
 
               {/* Subline */}
-              <div className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
-                <BlurText 
-                  text="Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen)." 
-                  delay={120}
-                  initialDelay={3500}
-                  animateBy="words"
-                  className="justify-center"
-                  stepDuration={0.35}
-                />
-              </div>
+              <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md opacity-0 animate-fade-in" style={{ animationDelay: '4s', animationFillMode: 'forwards' }}>
+                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
+              </p>
 
               {/* CTA Buttons */}
               <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-8">
