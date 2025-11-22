@@ -2,6 +2,7 @@ import { Mail, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { AvatarCircles } from "@/components/ui/avatar-circles";
+import BlurText from "@/components/ui/blur-text";
 import avatar1 from "@/assets/avatars/avatar-1.png";
 import avatar2 from "@/assets/avatars/avatar-2.png";
 import avatar3 from "@/assets/avatars/avatar-3.png";
@@ -110,8 +111,13 @@ const Hero = () => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="hero-animate-delay-1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
-                1A Stolla – <span className="text-yellow-400">Elektroinstallationen</span> & Service unter Fachverantwortung
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                <BlurText 
+                  text="1A Stolla – Elektroinstallationen & Service unter Fachverantwortung" 
+                  delay={50}
+                  animateBy="words"
+                  className="justify-center"
+                />
               </h1>
 
               {/* Avatar Circles */}
@@ -123,9 +129,15 @@ const Hero = () => {
               </div>
 
               {/* Subline */}
-              <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
-                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
-              </p>
+              <div className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
+                <BlurText 
+                  text="Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen)." 
+                  delay={30}
+                  animateBy="words"
+                  className="justify-center"
+                  stepDuration={0.25}
+                />
+              </div>
 
               {/* CTA Buttons */}
               <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-8">
