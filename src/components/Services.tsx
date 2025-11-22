@@ -88,7 +88,7 @@ const Services = () => {
                     />
                     <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
-                      <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" itemProp="name">
+                      <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-yellow-400 transition-colors" itemProp="name">
                         {service.title}
                       </h3>
                       <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
@@ -126,7 +126,7 @@ const Services = () => {
                     />
                     <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
-                      <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors" itemProp="name">
+                      <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-yellow-400 transition-colors" itemProp="name">
                         {service.title}
                       </h3>
                       <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
