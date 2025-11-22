@@ -7,25 +7,23 @@ import avatar2 from "@/assets/avatars/avatar-2.png";
 import avatar3 from "@/assets/avatars/avatar-3.png";
 import avatar4 from "@/assets/avatars/avatar-4.png";
 import avatar5 from "@/assets/avatars/avatar-5.png";
-import kuechenImg from "@/assets/hero/kuechen-vorher-nachher.png";
-import renovation1Img from "@/assets/hero/renovation-1.jpg";
-import renovation2Img from "@/assets/hero/renovation-2.jpg";
-import renovation3Img from "@/assets/hero/renovation-3.jpg";
-import bauarbeitenImg from "@/assets/hero/bauarbeiten.jpg";
-import sanitaerImg from "@/assets/hero/sanitaer.jpg";
-import elektroImg from "@/assets/hero/elektro.jpg";
-import malerImg from "@/assets/hero/maler.jpg";
+import circuitBreakersImg from "@/assets/hero/circuit-breakers.jpg";
+import electricianCeiling1Img from "@/assets/hero/electrician-ceiling-1.jpg";
+import electricianCeiling2Img from "@/assets/hero/electrician-ceiling-2.jpg";
+import electricalPanelImg from "@/assets/hero/electrical-panel.jpg";
+import outletInstallationImg from "@/assets/hero/outlet-installation.jpg";
+import cableManagementImg from "@/assets/hero/cable-management.jpg";
+import distributionPanelImg from "@/assets/hero/distribution-panel.jpg";
 
 const Hero = () => {
   const heroImages = [
-    kuechenImg,
-    renovation1Img,
-    renovation2Img,
-    renovation3Img,
-    bauarbeitenImg,
-    sanitaerImg,
-    elektroImg,
-    malerImg
+    circuitBreakersImg,
+    electricianCeiling1Img,
+    electricianCeiling2Img,
+    electricalPanelImg,
+    outletInstallationImg,
+    cableManagementImg,
+    distributionPanelImg
   ];
 
   const avatars = [
