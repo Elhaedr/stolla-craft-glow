@@ -17,7 +17,7 @@ const SiNa = () => {
     },
     {
       icon: Shield,
-      text: "Offizielle Ausstellung des Sicherheitsnachweises durch KFK Frutigen"
+      text: "Offizielle Ausstellung des Sicherheitsnachweises durch Partner"
     },
     {
       icon: Send,
@@ -45,7 +45,7 @@ const SiNa = () => {
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Sicherheitsnachweis nach NIV – <br className="hidden sm:block" />
-              mit Fachverantwortung durch <span className="text-primary">KFK Frutigen</span>
+              mit <span className="text-primary">Fachverantwortung durch Partner</span>
             </h2>
           </motion.div>
 
@@ -61,7 +61,7 @@ const SiNa = () => {
               1A Stolla führt sämtliche Elektroarbeiten fachgerecht aus und erstellt für jede abgeschlossene Installation die notwendigen Messungen und Prüfungen gemäss Niederspannungs-Installationsverordnung (NIV).
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Der offizielle Sicherheitsnachweis (SiNa) wird in Zusammenarbeit mit dem konzessionierten Elektroinstallationsbetrieb KFK Frutigen ausgestellt. Dadurch erhalten Sie einen rechtsgültigen, normgerechten Nachweis für jede Installation – egal ob Neubau, Umbau oder Reparatur.
+              Der offizielle Sicherheitsnachweis (SiNa) wird in Zusammenarbeit mit dem konzessionierten Partner-Elektroinstallationsbetrieb ausgestellt. Dadurch erhalten Sie einen rechtsgültigen, normgerechten Nachweis für jede Installation – egal ob Neubau, Umbau oder Reparatur.
             </p>
           </motion.div>
 
