@@ -1,4 +1,5 @@
 import { Shield, CheckCircle2, FileText, ClipboardCheck, Send } from "lucide-react";
+import electricianIsometric from "@/assets/electrician-isometric.png";
 
 const SiNa = () => {
   const steps = [
@@ -40,13 +41,22 @@ const SiNa = () => {
           </div>
 
           {/* Main Content Card */}
-          <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-lg mb-8">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              1A Stolla führt sämtliche Elektroarbeiten fachgerecht aus und erstellt für jede abgeschlossene Installation die notwendigen Messungen und Prüfungen gemäss Niederspannungs-Installationsverordnung (NIV).
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Der offizielle Sicherheitsnachweis (SiNa) wird in Zusammenarbeit mit dem konzessionierten Elektroinstallationsbetrieb KFK Frutigen ausgestellt. Dadurch erhalten Sie einen rechtsgültigen, normgerechten Nachweis für jede Installation – egal ob Neubau, Umbau oder Reparatur.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-8 mb-8 items-center">
+            <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-lg">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                1A Stolla führt sämtliche Elektroarbeiten fachgerecht aus und erstellt für jede abgeschlossene Installation die notwendigen Messungen und Prüfungen gemäss Niederspannungs-Installationsverordnung (NIV).
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Der offizielle Sicherheitsnachweis (SiNa) wird in Zusammenarbeit mit dem konzessionierten Elektroinstallationsbetrieb KFK Frutigen ausgestellt. Dadurch erhalten Sie einen rechtsgültigen, normgerechten Nachweis für jede Installation – egal ob Neubau, Umbau oder Reparatur.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <img 
+                src={electricianIsometric} 
+                alt="Professioneller Elektriker bei der Installation eines Sicherungskastens" 
+                className="w-full max-w-md h-auto"
+              />
+            </div>
           </div>
 
           {/* Steps List */}
