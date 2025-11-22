@@ -19,14 +19,8 @@ export const AvatarCircles = ({
 }: AvatarCirclesProps) => {
   return (
     <div className={cn("z-10 flex -space-x-4", className)}>
-      {avatarUrls.map((avatar, index) => (
-        <a
-          key={index}
-          href={avatar.profileUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="relative inline-block z-10"
-        >
+      {avatarUrls.map((avatar, index) => {
+        const avatarImage = (
           <img
             className="h-10 w-10 rounded-full border border-white ring-1 ring-white/20 transition-transform hover:scale-110 hover:z-30 object-cover"
             src={avatar.imageUrl}
@@ -34,8 +28,24 @@ export const AvatarCircles = ({
             height={40}
             alt={`Avatar ${index + 1}`}
           />
-        </a>
-      ))}
+        );
+
+        return avatar.profileUrl ? (
+          <a
+            key={index}
+            href={avatar.profileUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative inline-block z-10"
+          >
+            {avatarImage}
+          </a>
+        ) : (
+          <div key={index} className="relative inline-block z-10">
+            {avatarImage}
+          </div>
+        );
+      })}
       {numPeople && (
         <div className="relative z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white bg-black/80 text-center text-xs font-medium text-white ring-1 ring-white/20">
           +{numPeople}
