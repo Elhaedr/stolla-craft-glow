@@ -1,4 +1,5 @@
 import { Shield, CheckCircle2, FileText, ClipboardCheck, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 const SiNa = () => {
   const steps = [
@@ -29,28 +30,49 @@ const SiNa = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
-              <Shield className="w-8 h-8 text-primary" />
+          <motion.div 
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <div className="inline-flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full">
+                <Shield className="w-8 h-8 text-primary" />
+              </div>
+              <span className="text-lg font-semibold text-primary">SiNa</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Sicherheitsnachweis (SiNa) nach NIV – <br className="hidden sm:block" />
+              Sicherheitsnachweis nach NIV – <br className="hidden sm:block" />
               mit Fachverantwortung durch <span className="text-primary">KFK Frutigen</span>
             </h2>
-          </div>
+          </motion.div>
 
           {/* Main Content Card */}
-          <div className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-lg mb-8">
+          <motion.div 
+            className="bg-card border border-border rounded-2xl p-8 lg:p-10 shadow-lg mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+          >
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               1A Stolla führt sämtliche Elektroarbeiten fachgerecht aus und erstellt für jede abgeschlossene Installation die notwendigen Messungen und Prüfungen gemäss Niederspannungs-Installationsverordnung (NIV).
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Der offizielle Sicherheitsnachweis (SiNa) wird in Zusammenarbeit mit dem konzessionierten Elektroinstallationsbetrieb KFK Frutigen ausgestellt. Dadurch erhalten Sie einen rechtsgültigen, normgerechten Nachweis für jede Installation – egal ob Neubau, Umbau oder Reparatur.
             </p>
-          </div>
+          </motion.div>
 
           {/* Steps List */}
-          <div className="space-y-4 mb-8">
+          <motion.div 
+            className="space-y-4 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 1.1 }}
+          >
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (
@@ -69,14 +91,20 @@ const SiNa = () => {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
 
           {/* Conclusion */}
-          <div className="bg-primary/5 border border-primary/20 rounded-xl p-6 lg:p-8">
+          <motion.div 
+            className="bg-primary/5 border border-primary/20 rounded-xl p-6 lg:p-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 1.3 }}
+          >
             <p className="text-foreground font-medium text-center leading-relaxed">
               Durch diese Zusammenarbeit sind Kunden rechtlich vollständig abgesichert und erhalten einen anerkannten Sicherheitsnachweis gemäss gesetzlichen Vorgaben.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
