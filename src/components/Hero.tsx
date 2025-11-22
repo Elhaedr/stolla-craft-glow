@@ -2,7 +2,6 @@ import { Mail, Phone, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { AvatarCircles } from "@/components/ui/avatar-circles";
-import SplitText from "@/components/ui/split-text";
 import avatar1 from "@/assets/avatars/avatar-1.png";
 import avatar2 from "@/assets/avatars/avatar-2.png";
 import avatar3 from "@/assets/avatars/avatar-3.png";
@@ -46,7 +45,6 @@ const Hero = () => {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [showSubline, setShowSubline] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -112,90 +110,70 @@ const Hero = () => {
               </div>
 
               {/* Main Headline */}
-              <SplitText 
-                text="1A Stolla – Elektroinstallationen & Service unter Fachverantwortung" 
-                tag="h1"
-                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg"
-                delay={0}
-                duration={0.8}
-                splitType="words"
-                from={{ opacity: 0, y: 50 }}
-                to={{ opacity: 1, y: 0 }}
-                threshold={0.1}
-                rootMargin="0px"
-                onLetterAnimationComplete={() => setShowSubline(true)}
-              />
+              <h1 className="hero-animate-delay-1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+                1A Stolla – <span className="text-yellow-400">Elektroinstallationen</span> & Service unter Fachverantwortung
+              </h1>
 
               {/* Avatar Circles */}
-              {showSubline && (
-                <div className="flex justify-center items-center gap-3 mb-4 animate-fade-in">
-                  <AvatarCircles numPeople={150} avatarUrls={avatars} />
-                  <span className="text-white/90 text-sm font-medium">
-                    Über 150 zufriedene Kunden
-                  </span>
-                </div>
-              )}
+              <div className="hero-animate-delay-1 flex justify-center items-center gap-3 mb-4">
+                <AvatarCircles numPeople={150} avatarUrls={avatars} />
+                <span className="text-white/90 text-sm font-medium">
+                  Über 150 zufriedene Kunden
+                </span>
+              </div>
 
               {/* Subline */}
-              {showSubline && (
-                <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md animate-fade-in">
-                  Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
-                </p>
-              )}
+              <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
+                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
+              </p>
 
               {/* CTA Buttons */}
-              {showSubline && (
-                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 animate-fade-in">
-                  <Button variant="default" size="lg" className="bg-yellow-400 text-dark hover:bg-yellow-500 transition-colors shadow-xl" asChild>
-                    <a href="#kalender">Offerte anfragen</a>
-                  </Button>
-                  <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-dark transition-colors shadow-xl" asChild>
-                    <a href="tel:+41796509117">Anrufen: +41 79 650 91 17</a>
-                  </Button>
-                </div>
-              )}
+              <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Button variant="default" size="lg" className="bg-yellow-400 text-dark hover:bg-yellow-500 transition-colors shadow-xl" asChild>
+                  <a href="#kalender">Offerte anfragen</a>
+                </Button>
+                <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-dark transition-colors shadow-xl" asChild>
+                  <a href="tel:+41796509117">Anrufen: +41 79 650 91 17</a>
+                </Button>
+              </div>
 
               {/* Introduction Text */}
-              {showSubline && (
-                <div className="bg-white/10 backdrop-blur-md rounded-xl px-6 py-5 max-w-3xl mx-auto mb-12 lg:mb-16 border border-white/20 animate-fade-in">
-                  <p className="text-white/95 text-base leading-relaxed">
-                    Ich führe Elektroarbeiten sauber, zuverlässig und zu fairen Preisen aus. 
-                    Die Fachverantwortung und der offizielle Sicherheitsnachweis (SiNa) laufen über meinen konzessionierten Partnerbetrieb KFK Frutigen. 
-                    So erhalten Sie eine normgerechte Installation mit rechtsgültiger Dokumentation.
-                  </p>
-                </div>
-              )}
+              <div className="hero-animate-delay-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-5 max-w-3xl mx-auto mb-12 lg:mb-16 border border-white/20">
+                <p className="text-white/95 text-base leading-relaxed">
+                  Ich führe Elektroarbeiten sauber, zuverlässig und zu fairen Preisen aus. 
+                  Die Fachverantwortung und der offizielle Sicherheitsnachweis (SiNa) laufen über meinen konzessionierten Partnerbetrieb KFK Frutigen. 
+                  So erhalten Sie eine normgerechte Installation mit rechtsgültiger Dokumentation.
+                </p>
+              </div>
 
               {/* Contact Info */}
-              {showSubline && (
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/90 backdrop-blur-sm bg-black/20 rounded-full px-6 py-4 animate-fade-in">
-                  <a
-                    href="mailto:info@1a-stolla.ch"
-                    className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
-                  >
-                    <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm font-medium">info@1a-stolla.ch</span>
-                  </a>
-                  <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
-                  <a
-                    href="tel:+41796509117"
-                    className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
-                  >
-                    <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm font-medium">+41 79 650 91 17</span>
-                  </a>
-                  <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
-                  <a
-                    href="https://www.1a-stolla.ch"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
-                  >
-                    <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm font-medium">www.1a-stolla.ch</span>
-                  </a>
-                </div>
-              )}
+              <div className="hero-animate-delay-5 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 text-white/90 backdrop-blur-sm bg-black/20 rounded-full px-6 py-4">
+                <a
+                  href="mailto:info@1a-stolla.ch"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
+                >
+                  <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  <span className="text-sm font-medium">info@1a-stolla.ch</span>
+                </a>
+                <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
+                <a
+                  href="tel:+41796509117"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
+                >
+                  <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  <span className="text-sm font-medium">+41 79 650 91 17</span>
+                </a>
+                <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
+                <a
+                  href="https://www.1a-stolla.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
+                >
+                  <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                  <span className="text-sm font-medium">www.1a-stolla.ch</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
