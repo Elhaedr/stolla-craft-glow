@@ -114,9 +114,11 @@ const Hero = () => {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 <BlurText 
                   text="1A Stolla – Elektroinstallationen & Service unter Fachverantwortung" 
-                  delay={50}
+                  delay={150}
+                  initialDelay={1500}
                   animateBy="words"
                   className="justify-center"
+                  stepDuration={0.4}
                 />
               </h1>
 
@@ -132,10 +134,11 @@ const Hero = () => {
               <div className="text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
                 <BlurText 
                   text="Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen)." 
-                  delay={30}
+                  delay={120}
+                  initialDelay={3500}
                   animateBy="words"
                   className="justify-center"
-                  stepDuration={0.25}
+                  stepDuration={0.35}
                 />
               </div>
 
