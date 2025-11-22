@@ -94,7 +94,7 @@ const Services = () => {
                       <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
                         {service.description}
                       </p>
-                      <div className="flex items-center text-sm font-medium text-primary group-hover:translate-x-2 transition-transform duration-300">
+                      <div className="flex items-center text-sm font-medium text-white group-hover:text-yellow-400 group-hover:translate-x-2 transition-all duration-300">
                         Mehr erfahren
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </div>
@@ -132,7 +132,7 @@ const Services = () => {
                       <p className="mb-6 text-white/90 leading-relaxed" itemProp="description">
                         {service.description}
                       </p>
-                      <div className="flex items-center text-sm font-medium text-primary group-hover:translate-x-2 transition-transform duration-300">
+                      <div className="flex items-center text-sm font-medium text-white group-hover:text-yellow-400 group-hover:translate-x-2 transition-all duration-300">
                         Mehr erfahren
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </div>
