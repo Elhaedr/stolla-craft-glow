@@ -96,8 +96,7 @@ const Elektro = () => {
                 Ich übernehme Montage, Vorinstallation, Reparaturen und Erweiterungen.
               </p>
               <p className="text-lg text-muted-foreground">
-                Wo ein konzessionierter Abschluss nötig ist, erfolgt dieser über meinen Partner{" "}
-                <span className="font-semibold text-foreground">KFK Frutigen</span> – inklusive rechtsgültigem Sicherheitsnachweis.
+                Wo ein konzessionierter Abschluss nötig ist, erfolgt dieser über meinen Partner – inklusive rechtsgültigem Sicherheitsnachweis.
               </p>
             </div>
 
@@ -140,7 +139,7 @@ const Elektro = () => {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-accent">✓</span>
-                  Konzessionierter Abschluss über Partner KFK Frutigen
+                  Fachverantwortung durch Partner
                 </li>
                 <li className="flex gap-2">
                   <span className="text-accent">✓</span>

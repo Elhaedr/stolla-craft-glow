@@ -124,7 +124,7 @@ const Hero = () => {
 
               {/* Subline */}
               <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
-                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker (KFK Frutigen).
+                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker.
               </p>
 
               {/* CTA Buttons */}
@@ -141,7 +141,7 @@ const Hero = () => {
               <div className="hero-animate-delay-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-5 max-w-3xl mx-auto mb-12 lg:mb-16 border border-white/20">
                 <p className="text-white/95 text-base leading-relaxed">
                   Ich führe Elektroarbeiten sauber, zuverlässig und zu fairen Preisen aus. 
-                  Die Fachverantwortung und der offizielle Sicherheitsnachweis (SiNa) laufen über meinen konzessionierten Partnerbetrieb KFK Frutigen. 
+                  Die Fachverantwortung und der offizielle Sicherheitsnachweis (SiNa) laufen über meinen konzessionierten Partner. 
                   So erhalten Sie eine normgerechte Installation mit rechtsgültiger Dokumentation.
                 </p>
               </div>

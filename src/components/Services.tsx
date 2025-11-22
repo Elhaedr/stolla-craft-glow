@@ -60,7 +60,7 @@ const Services = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl">
               Ich übernehme Montage, Vorinstallation, Reparaturen und Erweiterungen.
-              Wo ein konzessionierter Abschluss nötig ist, erfolgt dieser über meinen Partner KFK Frutigen – inklusive rechtsgültigem Sicherheitsnachweis.
+              Wo ein konzessionierter Abschluss nötig ist, erfolgt dieser über meinen Partner – inklusive rechtsgültigem Sicherheitsnachweis.
             </p>
           </div>
 
