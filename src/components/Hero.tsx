@@ -114,23 +114,15 @@ const Hero = () => {
                 1A Stolla – <span className="text-yellow-400">Elektroinstallationen</span> & Service unter Fachverantwortung
               </h1>
 
-              {/* Avatar Circles */}
-              <div className="hero-animate-delay-1 flex justify-center items-center gap-3 mb-4">
-                <AvatarCircles numPeople={150} avatarUrls={avatars} />
-                <span className="text-white/90 text-sm font-medium">
-                  Über 150 zufriedene Kunden
-                </span>
-              </div>
-
               {/* Subline */}
               <p className="hero-animate-delay-2 text-lg sm:text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-md">
-                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch Partner-Elektriker.
+                Montage und Vorinstallation elektrischer Komponenten – Anschluss und Sicherheitsnachweis (SiNa) erfolgen durch konzessionierten Partner.
               </p>
 
               {/* CTA Buttons */}
               <div className="hero-animate-delay-3 flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Button variant="default" size="lg" className="bg-yellow-400 text-dark hover:bg-yellow-500 transition-colors shadow-xl" asChild>
-                  <a href="#kalender">Offerte anfragen</a>
+                  <a href="#kontakt">Offerte anfragen</a>
                 </Button>
                 <Button variant="secondary" size="lg" className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white hover:text-dark transition-colors shadow-xl" asChild>
                   <a href="tel:+41796509117">Anrufen: +41 79 650 91 17</a>
