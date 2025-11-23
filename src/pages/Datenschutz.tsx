@@ -26,10 +26,9 @@ const Datenschutz = () => {
               <p className="mb-2">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
               <p className="mb-2"><strong className="text-foreground">1A Stolla</strong></p>
               <p className="mb-2">Mehmet Stella</p>
-              <p className="mb-2">[Ihre Geschäftsadresse]</p>
-              <p className="mb-2">[PLZ] [Ort], Schweiz</p>
+              <p className="mb-2">Belp, Kanton Bern</p>
               <p className="mb-2">E-Mail: info@1a-stolla.ch</p>
-              <p className="mb-2">Telefon: [Ihre Telefonnummer]</p>
+              <p className="mb-2">Telefon: +41 79 650 91 17</p>
             </section>
 
             <section>
