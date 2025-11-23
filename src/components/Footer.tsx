@@ -44,10 +44,15 @@ const Footer = () => {
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">+41 79 650 91 17</span>
               </a>
-              <div className="flex items-center gap-2 text-background/70">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Belp,+Bern,+Switzerland"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-background/70 hover:text-accent transition-colors"
+              >
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">Kanton Bern, Belp</span>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -103,6 +108,13 @@ const Footer = () => {
                 className="block text-background/70 hover:text-accent transition-colors"
               >
                 AGB
+              </a>
+              <a
+                href="/downloads/Preisliste_1A_Stolla.pdf"
+                download
+                className="block text-background/70 hover:text-accent transition-colors underline"
+              >
+                Preisliste
               </a>
             </nav>
           </div>
