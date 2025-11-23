@@ -302,15 +302,20 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 rounded-lg">
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0">
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Belp,+Bern,+Switzerland"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-4 rounded-lg hover:bg-muted transition-colors group"
+                >
+                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                     <MapPin className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <div>
                     <p className="font-medium text-foreground mb-1">Standort</p>
-                    <p className="text-muted-foreground">Kanton Bern / Belp</p>
+                    <p className="text-muted-foreground group-hover:text-primary transition-colors">Kanton Bern / Belp</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
 
