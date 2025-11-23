@@ -14,20 +14,19 @@ const Impressum = () => {
               <h2 className="text-2xl font-bold text-foreground mb-4">Angaben gemäß Schweizer Recht</h2>
               <p className="mb-2"><strong className="text-foreground">Firmenname:</strong> 1A Stolla</p>
               <p className="mb-2"><strong className="text-foreground">Inhaber:</strong> Mehmet Stella</p>
-              <p className="mb-2"><strong className="text-foreground">Adresse:</strong> [Ihre Geschäftsadresse]</p>
-              <p className="mb-2"><strong className="text-foreground">PLZ / Ort:</strong> [PLZ] [Ort], Schweiz</p>
+              <p className="mb-2"><strong className="text-foreground">Standort:</strong> Belp, Kanton Bern</p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">Kontakt</h2>
               <p className="mb-2"><strong className="text-foreground">E-Mail:</strong> info@1a-stolla.ch</p>
-              <p className="mb-2"><strong className="text-foreground">Telefon:</strong> [Ihre Telefonnummer]</p>
+              <p className="mb-2"><strong className="text-foreground">Telefon:</strong> +41 79 650 91 17</p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">Registereintrag</h2>
               <p className="mb-2"><strong className="text-foreground">Rechtsform:</strong> Einzelunternehmen</p>
-              <p className="mb-2"><strong className="text-foreground">UID:</strong> [CHE-XXX.XXX.XXX]</p>
+              <p className="mb-2"><strong className="text-foreground">UID:</strong> CHE-461.037.939</p>
             </section>
 
             <section>
