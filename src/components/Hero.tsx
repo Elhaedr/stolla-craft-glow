@@ -113,7 +113,7 @@ const Hero = () => {
               <h1 className="hero-animate-delay-1 text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
                 1A Stolla<br />
                 <span className="text-yellow-400">Elektroinstallationen</span> & Service<br />
-                <span className="text-base sm:text-lg lg:text-xl font-normal">unter Fachverantwortung</span>
+                unter Fachverantwortung
               </h1>
 
               {/* Subline */}
