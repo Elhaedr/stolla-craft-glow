@@ -308,7 +308,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground mb-1">Standort</p>
-                    <p className="text-muted-foreground">Kanton Bern, Schweiz</p>
+                    <p className="text-muted-foreground">Kanton Bern / Belp</p>
                   </div>
                 </div>
               </div>
