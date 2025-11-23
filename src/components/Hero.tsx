@@ -105,7 +105,7 @@ const Hero = () => {
               <div className="hero-animate inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-white/30 bg-white/10 backdrop-blur-sm mb-8">
                 <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
                 <span className="text-sm font-medium text-white">
-                  Einzelunternehmen · Kanton Bern
+                  Einzelunternehmen · Kanton Bern / Belp
                 </span>
               </div>
 
@@ -162,16 +162,6 @@ const Hero = () => {
                 >
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">+41 79 650 91 17</span>
-                </a>
-                <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
-                <a
-                  href="https://www.1a-stolla.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
-                >
-                  <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm font-medium">www.1a-stolla.ch</span>
                 </a>
               </div>
             </div>
