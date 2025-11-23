@@ -71,8 +71,9 @@ const Hero = () => {
           >
             <img
               src={image}
-              alt={`Renovation project ${index + 1}`}
+              alt={`Elektroinstallation ${index + 1} - 1A Stolla Elektro-Montage in Belp, Kanton Bern`}
               className="w-full h-full object-cover"
+              loading={index === 0 ? "eager" : "lazy"}
             />
             {/* Dark overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40" />

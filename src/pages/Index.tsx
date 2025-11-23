@@ -15,6 +15,18 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.1a-stolla.ch/"
+          }]
+        })}
+      </script>
       <main itemScope itemType="https://schema.org/WebPage">
         <Hero />
         <WhyUs />

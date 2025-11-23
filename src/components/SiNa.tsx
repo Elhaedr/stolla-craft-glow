@@ -17,7 +17,7 @@ const SiNa = () => {
     icon: Send,
     text: "Zustellung an Eigentümer und/oder Netzbetreiber"
   }];
-  return <section className="py-16 md:py-24 bg-gradient-to-b from-muted/30 to-background">
+  return <section id="sina" className="py-16 md:py-24 bg-gradient-to-b from-muted/30 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
