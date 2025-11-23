@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
               <div className="flex items-center gap-2 text-background/70">
                 <MapPin className="w-4 h-4" />
-                <span className="text-sm">Kanton Bern, Schweiz</span>
+                <span className="text-sm">Kanton Bern, Belp</span>
               </div>
             </div>
           </div>
