@@ -57,7 +57,7 @@ const Trust = () => {
   };
 
   return (
-    <section id="ueber-uns" className="py-20 bg-background" ref={sectionRef}>
+    <section className="py-20 bg-background" ref={sectionRef}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Content */}
