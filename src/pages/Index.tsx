@@ -10,8 +10,6 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
-const CalendarBooking = lazy(() => import("@/components/CalendarBooking"));
-
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -23,9 +21,6 @@ const Index = () => {
         <Trust />
         <SiNa />
         <Testimonials />
-        <Suspense fallback={<div className="min-h-screen" />}>
-          <CalendarBooking />
-        </Suspense>
         <Contact />
         <FAQ />
       </main>
