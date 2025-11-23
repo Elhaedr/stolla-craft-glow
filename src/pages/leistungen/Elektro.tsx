@@ -68,6 +68,26 @@ const services = [
 const Elektro = () => {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.1a-stolla.ch/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Leistungen Elektro",
+              "item": "https://www.1a-stolla.ch/leistungen/elektro"
+            }
+          ]
+        })}
+      </script>
       <Navigation />
       <main className="pb-20">
         <section className="relative h-[400px] overflow-hidden">
