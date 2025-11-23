@@ -30,26 +30,26 @@ const WhyUs = () => {
   const advantages = [
     {
       icon: Shield,
-      title: "Ehrlich, sauber & zuverlässig",
-      description: "Sie erhalten ehrliche, saubere und zuverlässige Arbeit zu fairen Preisen.",
+      title: "Sauber, zuverlässig & fachgerecht",
+      description: "Ich arbeite präzise, sauber und zuverlässig – mit klarer Kommunikation und fairen Preisen.",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: Heart,
-      title: "Persönlich & flexibel",
-      description: "Ich arbeite persönlich, flexibel und mit großer Sorgfalt – egal ob kleine Reparatur oder größere Installation.",
+      title: "Persönlich & direkt",
+      description: "Als Inhaber betreue ich jedes Projekt selbst – flexibel, sorgfältig und ohne Umwege.",
       color: "from-rose-500 to-pink-500"
     },
     {
       icon: Network,
-      title: "Erfahrung & Netzwerk",
-      description: "Durch meine Erfahrung und mein Netzwerk mit Partnerfirmen kann ich Aufträge effizient und ohne unnötige Umwege ausführen.",
+      title: "Erfahrung & verantwortungsbewusst",
+      description: "Mit langjähriger Erfahrung in Montagen, Anschlüssen und Elektroarbeiten im zulässigen Rahmen liefere ich sichere, funktionierende Lösungen.",
       color: "from-violet-500 to-purple-500"
     },
     {
       icon: Award,
-      title: "Kundenzufriedenheit first",
-      description: "Kundenzufriedenheit und sauberes Handwerk stehen bei mir an erster Stelle.",
+      title: "Kundenzufriedenheit an erster Stelle",
+      description: "Saubere Arbeit, verlässliche Termine und Ergebnisse, auf die Sie sich langfristig verlassen können.",
       color: "from-amber-500 to-orange-500"
     }
   ];
