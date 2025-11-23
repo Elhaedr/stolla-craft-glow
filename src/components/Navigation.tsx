@@ -99,7 +99,7 @@ const Navigation = () => {
       
       {/* Black bar below navigation */}
       <div className="fixed top-20 left-0 right-0 z-40">
-        <div className="h-1 bg-black" />
+        <div className="h-3 bg-black" />
       </div>
     </>
   );
