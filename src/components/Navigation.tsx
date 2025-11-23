@@ -24,17 +24,15 @@ const Navigation = () => {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-black/20 backdrop-blur-md"
-          : "bg-transparent"
-      }`}
-    >
-      {/* Black-Yellow gradient bar at the top */}
-      <div className="h-1 bg-gradient-to-r from-black/25 via-yellow-400/25 to-black/25" />
-      
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-black/20 backdrop-blur-md"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
@@ -100,7 +98,14 @@ const Navigation = () => {
           </div>
         )}
       </div>
-    </nav>
+      </nav>
+      
+      {/* Yellow and Black bars below navigation */}
+      <div className="fixed top-20 left-0 right-0 z-40">
+        <div className="h-2 bg-yellow-400" />
+        <div className="h-2 bg-black" />
+      </div>
+    </>
   );
 };
 

@@ -55,7 +55,7 @@ const Hero = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="relative min-h-[calc(100vh+100px)] flex items-center justify-center overflow-hidden pt-28 md:pt-32 lg:pt-20 pb-32 md:pb-40">
+    <section className="relative min-h-[calc(100vh+100px)] flex items-center justify-center overflow-hidden pt-28 md:pt-32 lg:pt-28 pb-32 md:pb-40">
       {/* Background Image Slideshow */}
       <div className="absolute inset-0 overflow-hidden">
         {heroImages.map((image, index) => (
