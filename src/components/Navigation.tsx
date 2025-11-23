@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo-white.png";
+import logo from "@/assets/logo-1a.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,19 +32,16 @@ const Navigation = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center group">
             <img 
               src={logo} 
               alt="1A Stolla Logo"
-              width="68"
-              height="48"
+              width="200"
+              height="60"
               fetchPriority="high"
               decoding="async"
-              className="h-12 w-auto transition-transform group-hover:scale-105"
+              className="h-14 w-auto transition-transform group-hover:scale-105"
             />
-            <div className="text-2xl font-bold text-black transition-colors group-hover:text-gray-700">
-              1A Stolla
-            </div>
           </a>
 
           {/* Desktop Navigation */}

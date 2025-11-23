@@ -15,10 +15,10 @@ const CalendarBooking = lazy(() => import("@/components/CalendarBooking"));
 const Index = () => {
   return (
     <div className="min-h-screen">
-      {/* Vertical yellow-black bar on the right side */}
-      <div className="fixed right-0 top-0 bottom-0 w-3 z-30 pointer-events-none">
-        <div className="h-1/2 bg-yellow-400" />
-        <div className="h-1/2 bg-black" />
+      {/* Vertical bar across entire website - yellow left, black right */}
+      <div className="fixed left-0 top-0 bottom-0 w-[50px] z-30 pointer-events-none flex">
+        <div className="w-1/2 bg-yellow-400" />
+        <div className="w-1/2 bg-black" />
       </div>
       
       <Navigation />
