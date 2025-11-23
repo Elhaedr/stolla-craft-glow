@@ -5,32 +5,32 @@ const faqs = [
   {
     question: "Welche Regionen bedienen Sie?",
     answer:
-      "Ich bin hauptsächlich im Kanton Bern tätig. Für grössere Projekte komme ich auch in angrenzende Regionen. Kontaktieren Sie mich gerne für eine Abklärung.",
+      "Standort Belp · Einsatzgebiet: Grossraum Kanton Bern",
   },
   {
     question: "Wie schnell können Sie starten?",
     answer:
-      "Bei Notfällen bin ich in der Regel innerhalb von 24 Stunden vor Ort. Für geplante Projekte vereinbaren wir gemeinsam einen passenden Termin – oft bereits innerhalb weniger Tage.",
+      "In der Regel kann ich zeitnah beginnen. Kleine Arbeiten oft noch in derselben Woche, je nach Auftragslage sogar früher.",
   },
   {
     question: "Bieten Sie auch Notfalleinsätze an?",
     answer:
-      "Ja, ich bin für dringende Reparaturen und Notfälle erreichbar. Rufen Sie mich direkt an unter +41 79 650 91 17, und wir finden eine schnelle Lösung.",
+      "Je nach Verfügbarkeit bin ich kurzfristig für dringende Reparaturen oder sichere provisorische Lösungen im Einsatz. Einfach telefonisch melden – ich reagiere so schnell wie möglich.",
   },
   {
     question: "Wie erfolgt die Preisgestaltung?",
     answer:
-      "Nach einer kostenlosen Besichtigung erhalten Sie eine detaillierte Offerte. Ich arbeite transparent – keine versteckten Kosten, faire Preise. Bei kleineren Arbeiten rechne ich nach Aufwand ab.",
+      "Meine Preisgestaltung ist transparent, nachvollziehbar und fair. Abgerechnet wird nach Stundensatz, zuzüglich Anfahrt und – falls nötig – Materialkosten. Für kleine Arbeiten gibt es klare Pauschalen, damit Sie schon vorab wissen, womit Sie rechnen können.",
   },
   {
     question: "Sind Sie versichert?",
     answer:
-      "Ja, ich bin vollständig haftpflichtversichert. Ihre Sicherheit und die meiner Arbeit haben höchste Priorität.",
+      "Ich bin über eine Betriebshaftpflichtversicherung der Zurich versichert, mit einer Deckung von CHF 5 Mio. pro Ereignis.",
   },
   {
     question: "Übernehmen Sie auch kleine Aufträge?",
     answer:
-      "Absolut! Ob kleine Reparatur oder grosses Renovationsprojekt – jeder Auftrag ist mir wichtig. Ich nehme mir für jedes Anliegen die nötige Zeit.",
+      "Ja, auch kleine Aufträge werden von mir zuverlässig und sauber ausgeführt. Für mich zählt die Qualität, nicht die Grösse des Projekts.",
   },
 ];
 

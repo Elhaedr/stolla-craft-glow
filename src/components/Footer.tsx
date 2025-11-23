@@ -20,9 +20,11 @@ const Footer = () => {
             />
               <h3 className="text-2xl font-bold">1A Stolla</h3>
             </div>
-            <p className="text-background/70 mb-4">
-              Handwerk, das hält – seit über 15 Jahren Ihr zuverlässiger Partner
-              im Kanton Bern.
+            <p className="text-background/70 mb-4 leading-relaxed">
+              1 Mann<br />
+              1 direkter Weg<br />
+              1A Ergebnisse<br />
+              1A Stolla
             </p>
           </div>
 
