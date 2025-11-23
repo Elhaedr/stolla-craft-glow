@@ -41,7 +41,7 @@ const SiNa = () => {
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Sicherheitsnachweis nach NIV – <br className="hidden sm:block" />
-              mit <span className="text-primary">Fachverantwortung durch Partner</span>
+              mit <span className="text-primary">Fachverantwortung durch konzessionierten Partner</span>
             </h2>
           </motion.div>
 
