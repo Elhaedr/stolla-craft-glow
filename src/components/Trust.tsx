@@ -66,16 +66,9 @@ const Trust = () => {
               Vertrauen Sie auf{" "}
               <span className="text-primary">Qualität</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-6">
-              Als Einzelunternehmen im Kanton Bern stehe ich persönlich für
-              jedes Projekt ein. Mein Name – Mehmet Stella – ist mein
-              Versprechen: Zuverlässigkeit, Termintreue und saubere Arbeit.
-            </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Mit über 15 Jahren Erfahrung in Hauswartung, Installationen und
-              Renovationen weiss ich genau, worauf es ankommt. Ich nehme mir
-              Zeit für Ihre Anliegen und setze Ihre Wünsche präzise um – vom
-              ersten Beratungsgespräch bis zur finalen Abnahme.
+              Als Inhaber von 1A Stolla stehe ich – Mehmet Stolla – persönlich für Qualität, Verlässlichkeit und saubere Arbeit ein.
+              Ich arbeite präzise, termingerecht und mit hohem Anspruch an jedes Detail. Ob Montage, Geräteanschluss oder Elektroarbeiten im erlaubten Rahmen – Sie erhalten eine fachgerechte Ausführung und einen Service, auf den Sie sich verlassen können.
             </p>
 
             {/* Trust Badges */}
