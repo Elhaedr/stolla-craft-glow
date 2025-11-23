@@ -3,37 +3,79 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Zap, Lightbulb, Settings, Wrench, Home, Cable, CheckCircle } from "lucide-react";
 import installationenImg from "@/assets/installationen.jpg";
-const services = [{
-  icon: Zap,
-  title: "Elektroinstallationen",
-  items: ["Steckdosen & Schalter installieren / erneuern", "Leitungen ziehen (AP/UP)", "Erweiterungen von Stromkreisen"]
-}, {
-  icon: Lightbulb,
-  title: "Lichtinstallationen",
-  items: ["Neue Endstromkreise erstellen", "Installation von Gerätezuleitungen", "Herd, Backofen, Boiler, Waschmaschine etc. fix anschliessen"]
-}, {
-  icon: Settings,
-  title: "Verteilungen & Sicherungskasten",
-  items: ["Sicherungen ersetzen", "FI/RCD nachrüsten", "Verteiler umbauen", "Beschriftung erneuern", "Messungen und Fehlersuche"]
-}, {
-  icon: Cable,
-  title: "Beleuchtung",
-  items: ["Innen- & Aussenbeleuchtung", "LED-Umrüstung", "Lampenmontage"]
-}, {
-  icon: Home,
-  title: "Wohnungs- & Hausinstallationen",
-  items: ["Neuinstallationen", "Umbauten", "Renovationen", "Sanierungen"]
-}, {
-  icon: Wrench,
-  title: "Service & Reparaturen",
-  items: ["Störungen beheben", "Fehlerstrom & Kurzschlüsse", "Geräteanschluss", "Modernisierungen"]
-}];
+
+const services = [
+  {
+    icon: Zap,
+    title: "Elektroinstallationen",
+    items: [
+      "Steckdosen & Schalter installieren / erneuern",
+      "Leitungen ziehen (AP/UP)",
+      "Erweiterungen von Stromkreisen",
+    ],
+  },
+  {
+    icon: Lightbulb,
+    title: "Lichtinstallationen",
+    items: [
+      "Neue Endstromkreise erstellen",
+      "Installation von Gerätezuleitungen",
+      "Herd, Backofen, Boiler, Waschmaschine etc. fix anschliessen",
+    ],
+  },
+  {
+    icon: Settings,
+    title: "Verteilungen & Sicherungskasten",
+    items: [
+      "Sicherungen ersetzen",
+      "FI/RCD nachrüsten",
+      "Verteiler umbauen",
+      "Beschriftung erneuern",
+      "Messungen und Fehlersuche",
+    ],
+  },
+  {
+    icon: Cable,
+    title: "Beleuchtung",
+    items: [
+      "Innen- & Aussenbeleuchtung",
+      "LED-Umrüstung",
+      "Lampenmontage",
+    ],
+  },
+  {
+    icon: Home,
+    title: "Wohnungs- & Hausinstallationen",
+    items: [
+      "Neuinstallationen",
+      "Umbauten",
+      "Renovationen",
+      "Sanierungen",
+    ],
+  },
+  {
+    icon: Wrench,
+    title: "Service & Reparaturen",
+    items: [
+      "Störungen beheben",
+      "Fehlerstrom & Kurzschlüsse",
+      "Geräteanschluss",
+      "Modernisierungen",
+    ],
+  },
+];
+
 const Elektro = () => {
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Navigation />
       <main className="pb-20">
         <section className="relative h-[400px] overflow-hidden">
-          <img src={installationenImg} alt="Leistungen Elektro - Professionelle Elektroinstallationen" className="w-full h-full object-cover" />
+          <img
+            src={installationenImg}
+            alt="Leistungen Elektro - Professionelle Elektroinstallationen"
+            className="w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-black/60" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="container mx-auto px-4 text-center">
@@ -62,8 +104,9 @@ const Elektro = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               {services.map((service, index) => {
-              const Icon = service.icon;
-              return <div key={index} className="bg-card rounded-lg p-6 shadow-md border border-border">
+                const Icon = service.icon;
+                return (
+                  <div key={index} className="bg-card rounded-lg p-6 shadow-md border border-border">
                     <div className="flex items-center gap-3 mb-4">
                       <div className="p-2 bg-primary/10 rounded-lg">
                         <Icon className="w-6 h-6 text-primary" />
@@ -71,13 +114,16 @@ const Elektro = () => {
                       <h3 className="text-xl font-semibold">{service.title}</h3>
                     </div>
                     <ul className="space-y-2">
-                      {service.items.map((item, itemIndex) => <li key={itemIndex} className="flex gap-2 text-muted-foreground">
+                      {service.items.map((item, itemIndex) => (
+                        <li key={itemIndex} className="flex gap-2 text-muted-foreground">
                           <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                           <span>{item}</span>
-                        </li>)}
+                        </li>
+                      ))}
                     </ul>
-                  </div>;
-            })}
+                  </div>
+                );
+              })}
             </div>
 
             <div className="bg-accent/10 rounded-lg p-8 mb-12">
@@ -91,8 +137,8 @@ const Elektro = () => {
                   <span className="text-accent">✓</span>
                   Zuverlässiger Service und schnelle Reaktionszeiten
                 </li>
-                <li className="flex gap-2">✓
-Fachverantwortung durch konzessionierten Partner<span className="text-accent">✓</span>
+                <li className="flex gap-2">
+                  <span className="text-accent">✓</span>
                   Fachverantwortung durch Partner
                 </li>
                 <li className="flex gap-2">
@@ -111,6 +157,8 @@ Fachverantwortung durch konzessionierten Partner<span className="text-accent">�
         </section>
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Elektro;
