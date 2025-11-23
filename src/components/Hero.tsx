@@ -155,7 +155,7 @@ const Hero = () => {
                   <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">info@1a-stolla.ch</span>
                 </a>
-                <div className="hidden sm:block w-1 h-1 bg-white/70 rounded-full" />
+                <div className="hidden sm:block w-px h-5 bg-white/70" />
                 <a
                   href="tel:+41796509117"
                   className="flex items-center gap-2 hover:text-yellow-400 transition-colors group"
@@ -163,6 +163,10 @@ const Hero = () => {
                   <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
                   <span className="text-sm font-medium">+41 79 650 91 17</span>
                 </a>
+                <div className="hidden sm:block w-px h-5 bg-white/70" />
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium">Kanton Bern | Belp</span>
+                </div>
               </div>
             </div>
           </div>
