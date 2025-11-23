@@ -139,7 +139,7 @@ const Elektro = () => {
                 </li>
                 <li className="flex gap-2">
                   <span className="text-accent">✓</span>
-                  Fachverantwortung durch Partner
+                  Fachverantwortung durch konzessionierten Partner
                 </li>
                 <li className="flex gap-2">
                   <span className="text-accent">✓</span>
