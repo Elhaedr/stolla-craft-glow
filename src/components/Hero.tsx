@@ -1,4 +1,4 @@
-import { Mail, Phone, Globe } from "lucide-react";
+import { Mail, Phone, Globe, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { AvatarCircles } from "@/components/ui/avatar-circles";
@@ -55,7 +55,7 @@ const Hero = () => {
   }, [heroImages.length]);
 
   return (
-    <section className="relative min-h-[calc(100vh+100px)] flex items-center justify-center overflow-hidden pt-[92px] pb-32 md:pb-40">
+    <section className="relative min-h-[calc(100vh+100px)] flex items-center justify-center overflow-hidden pt-[165px] pb-32 md:pb-40">
       {/* Background Image Slideshow */}
       <div className="absolute inset-0 overflow-hidden">
         {heroImages.map((image, index) => (
@@ -157,6 +157,7 @@ const Hero = () => {
                 </a>
                 <div className="hidden sm:block w-px h-5 bg-white/70" />
                 <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
                   <span className="text-sm font-medium">Kanton Bern | Belp</span>
                 </div>
               </div>
