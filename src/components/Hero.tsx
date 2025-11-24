@@ -74,6 +74,11 @@ const Hero = () => {
               alt={`Elektroinstallation ${index + 1} - 1A Stolla Elektro-Montage in Belp, Kanton Bern`}
               className="w-full h-full object-cover"
               loading={index === 0 ? "eager" : "lazy"}
+              decoding={index === 0 ? "sync" : "async"}
+              fetchPriority={index === 0 ? "high" : "low"}
+              sizes="100vw"
+              width="1920"
+              height="1080"
             />
             {/* Dark overlay for better text readability */}
             <div className="absolute inset-0 bg-black/40" />
