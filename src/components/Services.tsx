@@ -85,6 +85,10 @@ const Services = () => {
                       className="absolute h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
+                      fetchPriority="low"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      width="800"
+                      height="600"
                     />
                     <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
@@ -123,6 +127,10 @@ const Services = () => {
                       className="absolute h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
+                      fetchPriority="low"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      width="800"
+                      height="600"
                     />
                     <div className="absolute inset-0 h-full bg-gradient-to-b from-black/20 via-black/40 to-black/80" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 md:p-8 text-white">
