@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo-white.png";
+import { toast } from "sonner";
 
 const Footer = () => {
   return (
@@ -111,13 +112,17 @@ const Footer = () => {
               >
                 AGB
               </a>
-              <a
-                href="/downloads/Preisliste_1A_Stolla.pdf"
-                download
-                className="block text-background/70 hover:text-accent transition-colors underline"
+              <button
+                onClick={() => {
+                  document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' });
+                  toast.info("Preisliste bitte per Email oder Telefon anfordern", {
+                    position: "bottom-right",
+                  });
+                }}
+                className="block text-left text-background/70 hover:text-accent transition-colors underline"
               >
                 Preisliste
-              </a>
+              </button>
             </nav>
           </div>
         </div>
