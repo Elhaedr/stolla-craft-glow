@@ -55,7 +55,7 @@ const Navigation = () => {
               </a>
             ))}
             <Button variant="default" size="default" className="bg-black text-white border border-black hover:bg-gray-800 hover:border-gray-800 transition-colors" asChild>
-              <a href="/#kalender">Angebot anfordern</a>
+              <a href="/#kontakt">Angebot anfordern</a>
             </Button>
           </div>
 
@@ -85,7 +85,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button variant="default" size="default" className="mt-2 bg-black text-white border border-black hover:bg-gray-800 hover:border-gray-800 transition-colors" asChild>
-                <a href="/#kalender">Angebot anfordern</a>
+                <a href="/#kontakt">Angebot anfordern</a>
               </Button>
             </div>
           </div>
