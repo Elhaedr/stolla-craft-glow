@@ -119,7 +119,7 @@ const Contact = () => {
             Kontakt aufnehmen
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ich freue mich auf Ihre Anfrage – per Formular, Telefon oder E-Mail
+            Wir freuen uns auf Ihre Anfrage – per Formular, Telefon oder E-Mail
           </p>
         </header>
 

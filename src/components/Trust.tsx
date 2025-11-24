@@ -75,17 +75,17 @@ const Trust = () => {
             <div className="flex flex-wrap gap-4">
               <div className="px-4 py-2 bg-muted rounded-lg border-2 border-border">
                 <span className="text-sm font-medium text-foreground">
-                  ✓ Haftpflichtversichert
+                  ✓ Faire & transparente Preise
                 </span>
               </div>
               <div className="px-4 py-2 bg-muted rounded-lg border-2 border-border">
                 <span className="text-sm font-medium text-foreground">
-                  ✓ Kanton Bern
+                  ✓ Termingerechte Ausführung
                 </span>
               </div>
               <div className="px-4 py-2 bg-muted rounded-lg border-2 border-border">
                 <span className="text-sm font-medium text-foreground">
-                  ✓ Einzelunternehmen
+                  ✓ Persönlicher Ansprechpartner
                 </span>
               </div>
             </div>
