@@ -130,7 +130,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t-2 border-accent">
           <p className="text-center text-background/70 text-sm">
-            © {new Date().getFullYear()} 1A Stolla – Mehmet Stella. Alle Rechte
+            © {new Date().getFullYear()} 1A Stolla – Mehmet Stolla. Alle Rechte
             vorbehalten.
           </p>
         </div>
